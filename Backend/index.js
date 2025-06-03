@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 mongoose
-.connect("mongodb://127.0.0.1:27017/cseproject")
+.connect("mongodb+srv://nishantk1103:g2XfRYCIAs9Du3tf@cluster0.7ohv7xo.mongodb.net/")
 .then(async () => {
     console.log("Connected to database");
     // Automatically seed courses if collection is empty
